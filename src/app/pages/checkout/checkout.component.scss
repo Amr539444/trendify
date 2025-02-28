@@ -1,0 +1,13 @@
+@media (max-width: 640px) {
+    :host ::ng-deep .p-breadcrumb-list li:last-of-type {
+        display: none !important;
+    }
+    
+}
+
+:host ::ng-deep p-togglebutton {
+    width: 100% ;
+}
+:host ::ng-deep .p-togglebutton {
+    width: 100% ;
+}

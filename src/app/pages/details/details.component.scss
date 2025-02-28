@@ -1,0 +1,67 @@
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #fff;
+    color: #8b5e35;
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: #8b5e35 ;
+    color: #fff;
+}
+
+// style Accordion
+:host ::ng-deep .p-accordioncontent-content {
+    color: #090f41 !important;
+    background-color: #f6f6f6 !important;
+  }
+:host ::ng-deep .p-accordionpanel {
+    border-color: #9D9DAA !important;
+}
+
+:host ::ng-deep .p-progressbar-value {
+    background-color: #FFC000 !important;
+}
+:host ::ng-deep .p-progressbar-label {
+    display: none !important;
+}
+:host ::ng-deep .p-progressbar {
+    height: 6px !important;
+    border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+    :host ::ng-deep .p-breadcrumb-list li:last-of-type {
+        display: none !important;
+    }
+    
+}
